@@ -131,7 +131,7 @@ def extract_medical_keywords(text):
         # Look for medical-related words in the chunk
         if any(token.text.lower() in ['pain', 'ache', 'discomfort', 'swelling', 'fever', 
                                     'infection', 'inflammation', 'disease', 'syndrome', 
-                                    'condition', 'symptom', 'treatment'] 
+                                    'condition', 'symptom', 'treatment']
                for token in chunk):
             medical_entities.append(chunk.text)
     
